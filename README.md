@@ -5,6 +5,11 @@
 ## 1.1> 준비물
 ### 1.1.1] Hardware
 - Jetson Nano
-- 
+- 랜선
+- 카메라 모듈(MIPI-CSI) ➡️ RPI 8MP CAMERA BOARD
+- 전원 어댑터(5V, 4A, 5.5mm/2.1mm)
+- 7인치 디스플레이
 ### 1.1.2] Software
 - Visual Studio Code
+- Putty
+### 1.2> 공부 내용
