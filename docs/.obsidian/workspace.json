@@ -1,0 +1,171 @@
+{
+  "main": {
+    "id": "b64a869d6687758f",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2287cb4ff32a386",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b44b7e22cfb8a1b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1st/Windows 환경에서 opencv 설치하기.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "071209bed417e6cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1st/CMakeLists.txt 작성 방법.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b7a063ae3e33c038",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ef2c8850e54e1e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12f2423d914a2134",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "555b9c5ae8282334",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3ad1751178e9bc50",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "53647c57c5fc350f",
+    "type": "split",
+    "children": [
+      {
+        "id": "b77aab3483b52835",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfc5e94275f2fbd3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1st/CMakeLists.txt 작성 방법.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "66a2194e5e94bd90",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1st/CMakeLists.txt 작성 방법.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0bb184d58f28a44e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e70c5329a6619716",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1st/CMakeLists.txt 작성 방법.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "071209bed417e6cf",
+  "lastOpenFiles": [
+    "1st/Windows 환경에서 opencv 설치하기.md",
+    "1st/CMakeLists.txt 작성 방법.md",
+    "img/Pasted image 20240228153754.png",
+    "Pasted image 20240228153529.png",
+    "img",
+    "1st"
+  ]
+}
