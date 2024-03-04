@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1st/CMakeLists.txt 작성 방법.md",
+                "file": "1st/Windows 환경에서 opencv 설치하기.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1st/CMakeLists.txt 작성 방법.md",
+                "file": "1st/Windows 환경에서 opencv 설치하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1st/CMakeLists.txt 작성 방법.md",
+                "file": "1st/Windows 환경에서 opencv 설치하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1st/CMakeLists.txt 작성 방법.md"
+                "file": "1st/Windows 환경에서 opencv 설치하기.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "b44b7e22cfb8a1b2",
   "lastOpenFiles": [
-    "1st/Windows 환경에서 opencv 설치하기.md",
     "1st/CMakeLists.txt 작성 방법.md",
+    "1st/Windows 환경에서 opencv 설치하기.md",
     "img/Pasted image 20240228153754.png",
     "Pasted image 20240228153529.png",
     "img",

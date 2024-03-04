@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/Users/cad/hyoin/cpp_practice/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/CameraCapture.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\CameraCapture.dir\\opencv_test.cpp.obj -c C:\\Users\\cad\\hyoin\\cpp_practice\\1st\\implement\\opencv_test.cpp",
-  "file": "C:/Users/cad/hyoin/cpp_practice/1st/implement/opencv_test.cpp",
-  "output": "CMakeFiles/CameraCapture.dir/opencv_test.cpp.obj"
-}
-]

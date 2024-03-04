@@ -103,3 +103,53 @@ int main() {
 
 위의 코드를 작성하고 컴파일 했는데, 실행 파일이 어딨는지 모르겠다. 
 빌드 과정에서 오류가 나타난 것 같다. ➡️ 일부 메소드를 찾을 수 없다고 나옴.
+ChatGPT를 통해 MinGW를 사용하기 위해 링커 설정이 추가적으로 필요하다는 사실을 알게 됐다. 
+
+## 2.3> 링커 설정
+링커 설정은 `find_package()`와 `target_link_libraries()`로도 충분하다고 한다. 
+그렇다면, 현재 `target_link_libraries()`의 인자로 들어가있는 `OpenCV_LIBS`의 값이 무엇인지 알아야 될 것 같다는 생각이 들었다. 
+
+`OpenCV_LIBS`의 값이 무엇인지 알기 위해 다음과 같은 라인을 넣었다.
+```cmake
+message(STATUS "OpenCV library status:")
+
+message(STATUS "    version: ${OpenCV_VERSION}")
+
+message(STATUS "    libraries: ${OpenCV_LIBS}")
+
+message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
+```
+
+이후에 cmake를 했고, make까지 해준다.
+```bash
+cmake -G "MinGW Makefiles" .
+
+mingw32-make
+```
+
+아직도 해결하지 못했다...
+계속해서 발생하는 오류는 아래와 같다. 
+```bash
+PS C:\Users\cad\hyoin\cpp_practice\1st\implement> mingw32-make
+[ 50%] Linking CXX executable CameraCapture.exe
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.text+0x28): undefined reference to `cv::VideoCapture::VideoCapture(int, int)'
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.text+0x33): undefined reference to `cv::VideoCapture::isOpened() const'
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.text+0x72): undefined reference to `cv::Mat::Mat()'
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.text+0x92): undefined reference to `cv::Mat::empty() const'
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.text+0xe0): undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.text+0x10e): undefined reference to `cv::waitKey(int)'
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.text+0x132): undefined reference to `cv::Mat::~Mat()'
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.text+0x13d): undefined reference to `cv::VideoCapture::~VideoCapture()'
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.text+0x17e): undefined reference to `cv::Mat::~Mat()'
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.text+0x18e): undefined reference to `cv::VideoCapture::~VideoCapture()'
+CMakeFiles\CameraCapture.dir/objects.a(opencv_test.cpp.obj):opencv_test.cpp:(.rdata$.refptr._ZN2cv12VideoCapturersERNS_3MatE[.refptr._ZN2cv12VideoCapturersERNS_3MatE]+0x0): undefined reference to `cv::VideoCapture::operator>>(cv::Mat&)'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make[2]: *** [CMakeFiles\CameraCapture.dir\build.make:115: CameraCapture.exe] Error 1
+mingw32-make[1]: *** [CMakeFiles\Makefile2:82: CMakeFiles/CameraCapture.dir/all] Error 2
+mingw32-make: *** [Makefile:90: all] Error 2
+```
+
+구글링 결과, 두 가지 결론에 도달했다. 
+1. 리눅스 환경에서 CMake를 사용하든지
+2. 윈도우에서 쓸 거면 vscode가 아니라 Visual Studio를 써야 한다. 
+리눅스를 또 받아야 하는 상황에 봉착했다;;
