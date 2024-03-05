@@ -1,0 +1,4 @@
+/home/hyoin/Documents/workspace/cpp_practice/2nd/build/CMakeFiles/rebuild_cache.dir
+/home/hyoin/Documents/workspace/cpp_practice/2nd/build/CMakeFiles/edit_cache.dir
+/home/hyoin/Documents/workspace/cpp_practice/2nd/build/CMakeFiles/Client.dir
+/home/hyoin/Documents/workspace/cpp_practice/2nd/build/CMakeFiles/Server.dir
