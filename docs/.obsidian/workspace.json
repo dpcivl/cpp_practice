@@ -11,11 +11,28 @@
             "id": "2556660594200134",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "1st/OpenCV에서 프레임 정보 받아오기.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "671867ece1c4d2bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2nd/TCP_IP 통신을 위한 소켓 만들기.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2nd/TCP_IP 통신을 위한 소켓 만들기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2nd/TCP_IP 통신을 위한 소켓 만들기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "2nd/TCP_IP 통신을 위한 소켓 만들기.md"
+              }
             }
           }
         ]
@@ -138,12 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2556660594200134",
+  "active": "671867ece1c4d2bf",
   "lastOpenFiles": [
-    "2nd",
+    "1st/CMakeLists.txt 작성 방법.md",
+    "2nd/TCP_IP 통신을 위한 소켓 만들기.md",
     "1st/OpenCV에서 프레임 정보 받아오기.md",
     "1st/Windows 환경에서 opencv 설치하기.md",
-    "1st/CMakeLists.txt 작성 방법.md",
+    "2nd",
     "img/Pasted image 20240228153754.png",
     "Pasted image 20240228153529.png",
     "img",
