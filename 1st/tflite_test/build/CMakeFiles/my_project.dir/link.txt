@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/my_project.dir/tflite.cpp.o  -o my_project   -L/home/hyoin/Documents/tensorflow_src/bazel-bin/tensorflow/lite  -Wl,-rpath,/home/hyoin/Documents/tensorflow_src/bazel-bin/tensorflow/lite -ltensorflowlite 
