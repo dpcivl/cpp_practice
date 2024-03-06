@@ -45,3 +45,21 @@ ChatGPT한테 간단한 tensorflow lite 소스 코드를 받아서 컴파일 해
 ## 3.2.1] flatbuffers 설치 ➡️ 해결 방안이 아니었음
 ## 3.2.2] C++ 표준 변경
 C++ 표준을 C++17로 변경했더니 에러 로그가 크게 줄었다. 
+그렇지만 해결하지 못했다;;
+
+# 4) CMake로 빌드 재도전
+https://www.tensorflow.org/lite/guide/build_cmake
+🔼 위의 링크 절차대로 tensorflow lite 빌드를 해본다. 
+
+## 4.1> thread 덜 사용하기
+```bash
+cmake --build . -j
+```
+🔼 위의 과정을 진행하다가 시스템 과부하가 되었는지 OS가 다운이 됐다. 그래서 -j 옵션 값을 4로 줬다. 
+
+![[Pasted image 20240306093101.png]]
+
+
+## 4.2> 제대로 설치되었는지 확인
+제대로 설치되지 않았다. 
+다시 링커 문제가 발생했다. 
