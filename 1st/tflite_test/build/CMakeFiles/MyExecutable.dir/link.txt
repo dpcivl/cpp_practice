@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/MyExecutable.dir/tflite.cpp.o  -o MyExecutable  /home/hyoin/Downloads/git_clone/tflite_build/libtensorflow-lite.a 

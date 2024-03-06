@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/hyoin/Documents/workspace/cpp_practice/1st/tflite_test/
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/my_project.dir/all
+all: CMakeFiles/MyExecutable.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/my_project.dir/clean
+clean: CMakeFiles/MyExecutable.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/my_project.dir
+# Target rules for target CMakeFiles/MyExecutable.dir
 
 # All Build rule for target.
-CMakeFiles/my_project.dir/all:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/depend
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hyoin/Documents/workspace/cpp_practice/1st/tflite_test/build/CMakeFiles --progress-num=1,2 "Built target my_project"
-.PHONY : CMakeFiles/my_project.dir/all
+CMakeFiles/MyExecutable.dir/all:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/depend
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hyoin/Documents/workspace/cpp_practice/1st/tflite_test/build/CMakeFiles --progress-num=1,2 "Built target MyExecutable"
+.PHONY : CMakeFiles/MyExecutable.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/my_project.dir/rule: cmake_check_build_system
+CMakeFiles/MyExecutable.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hyoin/Documents/workspace/cpp_practice/1st/tflite_test/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/my_project.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MyExecutable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hyoin/Documents/workspace/cpp_practice/1st/tflite_test/build/CMakeFiles 0
-.PHONY : CMakeFiles/my_project.dir/rule
+.PHONY : CMakeFiles/MyExecutable.dir/rule
 
 # Convenience name for target.
-my_project: CMakeFiles/my_project.dir/rule
+MyExecutable: CMakeFiles/MyExecutable.dir/rule
 
-.PHONY : my_project
+.PHONY : MyExecutable
 
 # clean rule for target.
-CMakeFiles/my_project.dir/clean:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/clean
-.PHONY : CMakeFiles/my_project.dir/clean
+CMakeFiles/MyExecutable.dir/clean:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/clean
+.PHONY : CMakeFiles/MyExecutable.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

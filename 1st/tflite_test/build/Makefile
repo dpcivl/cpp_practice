@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_project
+# Target rules for targets named MyExecutable
 
 # Build rule for target.
-my_project: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_project
-.PHONY : my_project
+MyExecutable: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MyExecutable
+.PHONY : MyExecutable
 
 # fast build rule for target.
-my_project/fast:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/build
-.PHONY : my_project/fast
+MyExecutable/fast:
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
+.PHONY : MyExecutable/fast
 
 tflite.o: tflite.cpp.o
 
@@ -129,7 +129,7 @@ tflite.o: tflite.cpp.o
 
 # target to build an object file
 tflite.cpp.o:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/tflite.cpp.o
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/tflite.cpp.o
 .PHONY : tflite.cpp.o
 
 tflite.i: tflite.cpp.i
@@ -138,7 +138,7 @@ tflite.i: tflite.cpp.i
 
 # target to preprocess a source file
 tflite.cpp.i:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/tflite.cpp.i
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/tflite.cpp.i
 .PHONY : tflite.cpp.i
 
 tflite.s: tflite.cpp.s
@@ -147,7 +147,7 @@ tflite.s: tflite.cpp.s
 
 # target to generate assembly for a file
 tflite.cpp.s:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/tflite.cpp.s
+	$(MAKE) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/tflite.cpp.s
 .PHONY : tflite.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... my_project"
+	@echo "... MyExecutable"
 	@echo "... tflite.o"
 	@echo "... tflite.i"
 	@echo "... tflite.s"
