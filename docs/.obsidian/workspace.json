@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "e581d518fb535e8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3rd/Checklist.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "4964394d3c46b24a",
             "type": "leaf",
             "state": {
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1st/OpenCV에서 프레임 정보 받아오기.md",
+                "file": "3rd/Checklist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1st/OpenCV에서 프레임 정보 받아오기.md",
+                "file": "3rd/Checklist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1st/OpenCV에서 프레임 정보 받아오기.md"
+                "file": "3rd/Checklist.md"
               }
             }
           }
@@ -195,11 +207,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "46b09feff25a1dc7",
+  "active": "e581d518fb535e8f",
   "lastOpenFiles": [
-    "3rd/Checklist.md",
     "1st/OpenCV에서 프레임 정보 받아오기.md",
+    "3rd/Checklist.md",
     "3rd",
+    "3rd/Checklist.md",
     "1st/tensorflow lite API for C++ 설치하기.md",
     "img/Pasted image 20240306093101.png",
     "img/Pasted image 20240305163927.png",
