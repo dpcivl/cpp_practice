@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "C:/Users/cad/hyoin/cpp_practice/1st/implement"
+    "cmake.sourceDirectory": "C:/Users/cad/hyoin/cpp_practice/1st/implement",
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
