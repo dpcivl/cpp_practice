@@ -20,3 +20,5 @@
 struct in_addr ip_addr;
 inet_pton(AF_INET, "192.168.1.1", &ip_addr);
 ```
+
+🚫 글 중단
