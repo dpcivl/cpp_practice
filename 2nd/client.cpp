@@ -1,45 +1,60 @@
+// client 모듈 만들기
+
+#include "client.h"
 #include <iostream>
-#include <sys/socket.h>
+#include <cstring>
 #include <arpa/inet.h>
+#include <sys/socket.h>
 #include <unistd.h>
-#include <string.h>
 
-int main() {
-    const char *message = "Hello, server!";
-    char buffer[1024] = {0};
-
-    int sock = 0;
+SocketClient::SocketClient(std::string addr, int port) : address(addr), port(port) {
+    // 소켓 생성
     sock = socket(AF_INET, SOCK_STREAM, 0);
-    if (sock < 0) {
-        std::cerr << "Socket creation error\n";
-        return -1;
+    if (sock == -1) {
+        throw std::runtime_error("Could not create socket");
     }
 
-    sockaddr_in serv_addr;
-    serv_addr.sin_family = AF_INET;
-    serv_addr.sin_port = htons(8080);
+    server.sin_addr.s_addr = inet_addr(address.c_str());
+    server.sin_family = AF_INET;
+    server.sin_port = htons(port);
+}
 
-    if(inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr) <= 0) {
-        std::cerr << "Invalid address/ Address not supported\n";
-        return -1;
+bool SocketClient::connectToServer() {
+    // 서버에 연결
+    if (connect(sock, (struct sockaddr *)&server, sizeof(server)) < 0) {
+        perror("connect failed. Error");
+        return false;
     }
 
-    if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) {
-        std::cerr << "Connection Failed\n";
-        return -1;
+    std::cout << "Connected to server" << std::endl;
+    return true;
+}
+
+bool SocketClient::sendData(std::string data) {
+    // 데이터 송신
+    if (send(sock, data.c_str(), data.size(), 0) < 0) {
+        perror("Send failed : ");
+        return false;
     }
+    return true;
+}
 
-    // Send and receive data
-    // 서버에 메시지 보내기
-    send(sock, message, strlen(message), 0);
-    std::cout << "Message sent: ";
-    std::cout << message << "\n";
+std::string SocketClient::receiveData() {
+    // 데이터 수신
+    char buffer[1024];
+    memset(buffer, 0, sizeof(buffer));
+    if (recv(sock, buffer, sizeof(buffer), 0) < 0) {
+        puts("recv failed");
+        return "";
+    }
+    return std::string(buffer);
+}
 
-    // 서버로부터의 응답 받기
-    int valread = read(sock, buffer, 1024);
-    std::cout << "Server: " << buffer << std::endl;
-
+void SocketClient::closeSocket() {
+    // 소켓 종료
     close(sock);
+}
 
-    return 0;
+SocketClient::~SocketClient() {
+    closeSocket();
 }
