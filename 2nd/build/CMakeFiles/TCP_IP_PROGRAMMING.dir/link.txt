@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/TCP_IP_PROGRAMMING.dir/server.cpp.o CMakeFiles/TCP_IP_PROGRAMMING.dir/client.cpp.o  -o TCP_IP_PROGRAMMING 
