@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "3b6201f6ec32fe68",
+        "id": "9cd3fd98b2846ccd",
         "type": "tabs",
         "children": [
           {
-            "id": "09d7b108951c8157",
+            "id": "e05443cc43180b7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2nd/TCP_IP 통신을 위한 소켓 만들기.md",
+                "file": "3rd/Checklist.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e37d5d1a0e6df122",
+            "id": "3a29667f33221c8b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2nd/클라이언트 소켓 만들기.md",
+                "file": "3rd/I2C 제어하기.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2nd/클라이언트 소켓 만들기.md",
+                "file": "3rd/I2C 제어하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2nd/클라이언트 소켓 만들기.md",
+                "file": "3rd/I2C 제어하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2nd/클라이언트 소켓 만들기.md"
+                "file": "3rd/I2C 제어하기.md"
               }
             }
           }
@@ -159,15 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e37d5d1a0e6df122",
+  "active": "3a29667f33221c8b",
   "lastOpenFiles": [
+    "3rd/read_i2c.cpp",
+    "3rd/Checklist.md",
+    "3rd/I2C 제어하기.md",
     "2nd/TCP_IP 통신을 위한 소켓 만들기.md",
     "2nd/클라이언트 소켓 만들기.md",
     "2nd/프로토콜 만들기.md",
     "learn/`vector`가 뭔데....md",
     "1st/OpenCV에서 프레임 정보 받아오기.md",
     "1st/tensorflow lite API for C++ 설치하기.md",
-    "3rd/Checklist.md",
     "3rd",
     "img/Pasted image 20240306093101.png",
     "img/Pasted image 20240305163927.png",
