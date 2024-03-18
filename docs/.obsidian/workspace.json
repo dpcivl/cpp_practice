@@ -11,8 +11,12 @@
             "id": "9ef2eab0873a80c2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "3rd/I2C 제어하기.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "3rd/I2C 제어하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "3rd/I2C 제어하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "3rd/I2C 제어하기.md"
+              }
             }
           }
         ]
@@ -140,8 +148,9 @@
   },
   "active": "9ef2eab0873a80c2",
   "lastOpenFiles": [
-    "3rd/Checklist.md",
+    "3rd/GPIO 제어하기.md",
     "3rd/I2C 제어하기.md",
+    "3rd/Checklist.md",
     "3rd/read_i2c.cpp",
     "2nd/TCP_IP 통신을 위한 소켓 만들기.md",
     "2nd/클라이언트 소켓 만들기.md",
